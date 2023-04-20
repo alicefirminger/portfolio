@@ -1,89 +1,118 @@
-.job-role {
-	position: absolute;
-	width: 527px;
-	height: 220px;
-	left: 92px;
-	top: 86px;
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
 
+.container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.box {
+	height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.top-box {
+	background-color: white;
+}
+
+.bottom-box {
+	background-color: #5c0029;
+	color: #ffffff;
+}
+
+.job-role {
 	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 200;
 	font-size: 70px;
 	line-height: 50px;
-	/* or 71% */
-
 	color: #5c0029;
 }
 
 .greeting {
-	position: absolute;
-	width: 891px;
-	height: 138px;
-	left: 389px;
-	top: 388px;
-
 	font-family: "HeadlandOne";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 190px;
 	line-height: 65px;
-	/* or 34% */
-
 	letter-spacing: 0.15em;
 	text-transform: capitalize;
-
 	color: #5c0029;
 }
 
 .greeting-name {
-	position: absolute;
-	width: 876px;
-	height: 185px;
-	left: 464px;
-	top: 546px;
-
 	font-family: "HeadlandOne";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 190px;
 	line-height: 65px;
-	/* or 34% */
-
 	letter-spacing: 0.15em;
 	text-transform: capitalize;
-
-	color: #060303;
-}
-
-.top-section {
-	position: absolute;
-	width: 1512px;
-	height: 526px;
-	left: 0px;
-	top: 0px;
+	color: #ffffff;
 }
 
 .links {
-	position: absolute;
-	width: 527px;
-	height: 220px;
-	left: 1145px;
-	top: 676px;
-
 	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 200;
 	font-size: 64px;
 	line-height: 50px;
-	/* or 78% */
-
 	font-variant: small-caps;
-
 	color: #ffffff;
+	text-align: center;
 }
 
-.whole-page {
+.job-role {
 	position: absolute;
-	width: 1512px;
-	height: 982px;
+	top: 20px;
+	left: 20px;
+	width: 527px;
+	height: 220px;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 200;
+	font-size: 70px;
+	line-height: 50px;
+	color: #5c0029;
+}
+
+links {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.links li {
+	margin-bottom: 10px;
+}
+
+.links a {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 200;
+	font-size: 64px;
+	line-height: 50px;
+	font-variant: small-caps;
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 1px solid #ffffff;
+}
+
+.links a:hover {
+	border-bottom: none;
+}
+ul {
+	list-style: none;
 }
