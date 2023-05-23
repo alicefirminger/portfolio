@@ -7,9 +7,8 @@
 html,
 body {
 	box-sizing: border-box;
-	height: 100%;
-	padding: 0;
-	margin: 0;
+	height: 100vh;
+	width: 100vw;
 	font-family: "Montserrat";
 	font-size: 18px;
 }
@@ -20,23 +19,36 @@ body {
 	flex-direction: column;
 	flex-wrap: wrap;
 	height: 12rem;
+	min-width: 100vw;
 	background-color: #5c0029;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-		rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 	transition: width 1s, height 1s;
+	overflow: hidden;
 }
 .body-container:hover {
 	height: 35rem;
 	cursor: pointer;
 }
 
+.job-role {
+	display: none;
+	font-size: 4rem;
+	font-weight: lighter;
+	text-align: center;
+	color: #ffff;
+	animation: fadeIn 8s;
+}
+
+.body-container:hover .job-role {
+	display: block;
+}
 .greeting {
-	font-size: 5rem;
+	font-size: 6rem;
 	font-weight: normal;
 	text-align: center;
 	color: #ffff;
-	padding: 2rem;
+	animation: fadeIn 4s;
 }
+
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
@@ -46,31 +58,13 @@ body {
 	}
 }
 
-.job-role {
-	font-size: 3rem;
-	font-weight: lighter;
-	text-align: left;
-	padding-left: 1rem;
-	color: #ffff;
-	animation: fadeIn 8s;
-}
-
-.greeting:after {
-	content: "";
-	width: 30rem;
-	height: 0.2rem;
-	display: block;
-	background-color: #ffff;
-	margin-top: 1.5rem;
-}
-
 .links {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	width: 100%;
+	width: 100vw;
 	list-style: none;
-	margin: 2rem;
+	margin: 2rem 0 2rem 0;
 }
 
 a:link {
@@ -83,25 +77,24 @@ a:visited {
 }
 
 a:hover {
-	letter-spacing: 0.2rem;
+	text-decoration: underline overline #5c0029;
 	transition: all 0.2s ease-in-out;
 }
-
 .footer-links {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	width: 100%;
+	width: 100vw;
 	list-style: none;
-	margin: 2rem;
+	margin: 2rem 0 2rem 0;
 }
 
 .wrapper {
 	box-sizing: border-box;
-	min-height: 90%;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	min-width: 100%;
+	min-width: 100vw;
 }
 .nav-bar,
 .footer-nav {
@@ -112,11 +105,7 @@ a:hover {
 	flex-grow: 1;
 }
 
-.bottom-link:hover {
-	font-size: 1.2rem;
-	transition: all 0.2s ease-in-out;
-}
-
 .footer-nav {
+	margin-top: auto;
 	padding: 0.5rem;
 }
