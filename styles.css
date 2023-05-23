@@ -10,7 +10,7 @@ body {
 	height: 100vh;
 	width: 100vw;
 	font-family: "Montserrat";
-	font-size: 18px;
+	font-size: 16px;
 }
 .body-container {
 	display: flex;
@@ -18,11 +18,13 @@ body {
 	align-items: center;
 	flex-direction: column;
 	flex-wrap: wrap;
-	height: 12rem;
+	height: 15rem;
 	min-width: 100vw;
 	background-color: #5c0029;
 	transition: width 1s, height 1s;
 	overflow: hidden;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
 }
 .body-container:hover {
 	height: 35rem;
@@ -47,6 +49,7 @@ body {
 	text-align: center;
 	color: #ffff;
 	animation: fadeIn 4s;
+	margin-bottom: 1rem;
 }
 
 @keyframes fadeIn {
@@ -64,20 +67,20 @@ body {
 	justify-content: space-around;
 	width: 100vw;
 	list-style: none;
-	margin: 2rem 0 2rem 0;
 }
 
 a:link {
-	color: #5c0029;
+	color: #ffff;
 	text-decoration: none;
+	font-size: 1.2rem;
 }
 
 a:visited {
-	color: #5c0029;
+	color: #ffff;
 }
 
 a:hover {
-	text-decoration: underline overline #5c0029;
+	text-decoration: underline overline #ffff;
 	transition: all 0.2s ease-in-out;
 }
 .footer-links {
@@ -86,7 +89,7 @@ a:hover {
 	justify-content: space-around;
 	width: 100vw;
 	list-style: none;
-	margin: 2rem 0 2rem 0;
+	margin: 2rem 0 0rem 0;
 }
 
 .wrapper {
@@ -101,6 +104,14 @@ a:hover {
 	flex-grow: 0;
 	flex-shrink: 0;
 }
+
+.nav-bar {
+	position: fixed;
+	background-color: #5c0029;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	margin-bottom: 2rem;
+}
 .body {
 	flex-grow: 1;
 }
@@ -108,4 +119,46 @@ a:hover {
 .footer-nav {
 	margin-top: auto;
 	padding: 0.5rem;
+}
+
+.content {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	width: 100vw;
+}
+
+.about-me,
+.skills {
+	padding-top: 4.5rem;
+	margin: 3rem;
+	width: 60vw;
+	align-self: flex-start;
+	line-height: 2rem;
+	text-align: justify;
+}
+.projects,
+.contact-me {
+	padding-top: 4.5rem;
+	margin: 3rem;
+	width: 60vw;
+	align-self: flex-end;
+	line-height: 2rem;
+	text-align: justify;
+}
+
+#bottom-link {
+	color: #5c0029;
+	text-decoration: none;
+}
+
+#bottom-link:hover {
+	text-decoration: underline overline #5c0029;
+	transition: all 0.2s ease-in-out;
+}
+
+h1 {
+	font-size: 3.5rem;
+	margin-bottom: 3rem;
 }
