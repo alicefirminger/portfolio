@@ -1,3 +1,5 @@
+/* Font for headings*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -9,22 +11,30 @@ body {
 	box-sizing: border-box;
 	height: 100vh;
 	width: 100vw;
-	font-family: "Montserrat";
+	font-family: "Manrope", sans-serif;
+	color: rgb(39, 94, 97);
 	font-size: 16px;
+	margin: 0; /* Add this line to remove the margin */
 }
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
 .body-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	flex-wrap: wrap;
-	height: 15rem;
+	height: 25rem;
 	min-width: 100vw;
-	background-color: #5c0029;
 	transition: width 1s, height 1s;
-	overflow: hidden;
 	margin-top: 3rem;
 	margin-bottom: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .body-container:hover {
 	height: 35rem;
@@ -33,10 +43,10 @@ body {
 
 .job-role {
 	display: none;
-	font-size: 4rem;
+	font-size: 4.5rem;
 	font-weight: lighter;
 	text-align: center;
-	color: #ffff;
+	color: rgb(39, 94, 97);
 	animation: fadeIn 8s;
 }
 
@@ -44,12 +54,13 @@ body {
 	display: block;
 }
 .greeting {
-	font-size: 6rem;
-	font-weight: normal;
+	font-size: 12rem;
 	text-align: center;
-	color: #ffff;
+	color: rgb(39, 94, 97);
 	animation: fadeIn 4s;
 	margin-bottom: 1rem;
+	text-transform: uppercase;
+	font-weight: 100;
 }
 
 @keyframes fadeIn {
@@ -67,20 +78,21 @@ body {
 	justify-content: space-around;
 	width: 100vw;
 	list-style: none;
+	font-variant: small-caps;
 }
 
 a:link {
-	color: #ffff;
+	color: rgb(39, 94, 97);
 	text-decoration: none;
 	font-size: 1.2rem;
 }
 
 a:visited {
-	color: #ffff;
+	color: rgb(39, 94, 97);
 }
 
 a:hover {
-	text-decoration: underline overline #ffff;
+	text-decoration: underline overline rgb(39, 94, 97);
 	transition: all 0.2s ease-in-out;
 }
 .footer-links {
@@ -107,10 +119,11 @@ a:hover {
 
 .nav-bar {
 	position: fixed;
-	background-color: #5c0029;
+	background-color: rgb(255, 255, 255);
 	padding-bottom: 1rem;
 	padding-top: 1rem;
 	margin-bottom: 2rem;
+	/* box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px; */
 }
 .body {
 	flex-grow: 1;
@@ -130,35 +143,82 @@ a:hover {
 }
 
 .about-me,
-.skills {
-	padding-top: 4.5rem;
-	margin: 3rem;
-	width: 60vw;
-	align-self: flex-start;
-	line-height: 2rem;
-	text-align: justify;
-}
+.skills,
 .projects,
 .contact-me {
-	padding-top: 4.5rem;
-	margin: 3rem;
-	width: 60vw;
-	align-self: flex-end;
+	padding: 4.5rem 3rem 0rem 3rem;
+	width: 100vw;
 	line-height: 2rem;
 	text-align: justify;
 }
 
 #bottom-link {
-	color: #5c0029;
+	color: rgb(39, 94, 97);
 	text-decoration: none;
+	font-variant: small-caps;
 }
 
 #bottom-link:hover {
-	text-decoration: underline overline #5c0029;
+	text-decoration: underline overline;
+	color: rgb(39, 94, 97);
 	transition: all 0.2s ease-in-out;
 }
 
-h1 {
-	font-size: 3.5rem;
+.titles {
+	font-size: 4.7rem;
+	letter-spacing: 1.5rem;
 	margin-bottom: 3rem;
+	font-weight: 100;
+	font-variant: small-caps;
+}
+
+@media screen and (max-width: 768px) {
+	.greeting {
+		font-size: 5rem;
+	}
+
+	.job-role {
+		font-size: 2rem;
+	}
+	.about-me {
+		font-size: 1rem;
+	}
+	.skills {
+		font-size: 1rem;
+	}
+	.contact-me {
+		font-size: 1rem;
+	}
+	.projects {
+		font-size: 1rem;
+	}
+
+	.titles {
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.greeting {
+		font-size: 4rem;
+	}
+
+	.job-role {
+		font-size: 1.7rem;
+	}
+	.about-me {
+		font-size: 1rem;
+	}
+	.skills {
+		font-size: 1rem;
+	}
+	.contact-me {
+		font-size: 1rem;
+	}
+	.projects {
+		font-size: 1rem;
+	}
+	.titles {
+		font-size: 2.5rem;
+	}
 }

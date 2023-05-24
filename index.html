@@ -9,8 +9,17 @@
 			href="https://fonts.googleapis.com/css?family=Montserrat"
 			rel="stylesheet"
 		/>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Mulish&display=swap");
+		</style>
+		<link
+			rel="stylesheet"
+			href="stylesheet.css"
+			type="text/css"
+			charset="utf-8"
+		/>
 		<script src="main.js"></script>
-		<title>My Portfolio</title>
+		<title>Alice Firminger</title>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -28,7 +37,7 @@
 			</div>
 			<div class="content">
 				<div class="about-me" id="about">
-					<h1>About</h1>
+					<h1 class="titles">About</h1>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
 						ex commodo, ultricies felis non, ullamcorper ipsum. Donec convallis
@@ -55,7 +64,7 @@
 					</p>
 				</div>
 				<div class="projects" id="projects">
-					<h1>Projects</h1>
+					<h1 class="titles">Projects</h1>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
 						ex commodo, ultricies felis non, ullamcorper ipsum. Donec convallis
@@ -82,7 +91,7 @@
 					</p>
 				</div>
 				<div class="skills" id="skills">
-					<h1>Skills</h1>
+					<h1 class="titles">Skills</h1>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
 						ex commodo, ultricies felis non, ullamcorper ipsum. Donec convallis
@@ -109,31 +118,23 @@
 					</p>
 				</div>
 				<div class="contact-me" id="contact">
-					<h1>Contact</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
-						ex commodo, ultricies felis non, ullamcorper ipsum. Donec convallis
-						laoreet eleifend. Pellentesque ac urna erat. Aliquam ultrices
-						dapibus fermentum. Suspendisse sollicitudin risus id congue finibus.
-						Pellentesque vel nunc mauris. Pellentesque habitant morbi tristique
-						senectus et netus et malesuada fames ac turpis egestas. Aliquam
-						consectetur viverra libero vitae molestie. Donec non viverra justo,
-						vitae tincidunt neque. Proin velit sem, efficitur sagittis tempus
-						in, ultrices vitae leo. Sed tincidunt justo sed diam varius
-						fermentum et a leo. Aliquam sodales urna vel tristique finibus.
-						Quisque ut mauris a metus convallis vestibulum. Cras sit amet
-						malesuada purus. Nulla vestibulum eleifend diam. Aliquam suscipit
-						metus ut lectus dignissim aliquet. Integer molestie nisi risus, id
-						luctus quam sodales in. Morbi ac vehicula nunc. In vel nulla velit.
-						Vivamus iaculis risus placerat massa cursus, quis condimentum augue
-						semper. Aliquam molestie nisl egestas dui aliquam, eget tincidunt
-						ante pulvinar. Nullam eleifend augue nec lobortis laoreet. Integer
-						vehicula pretium erat sit amet euismod. Nunc vel ultrices ante.
-						Nullam diam risus, vehicula nec pretium vitae, semper non diam.
-						Integer ornare gravida augue at tristique. Maecenas in nulla
-						posuere, ornare neque ut, vestibulum libero. Ut pellentesque vel
-						lectus in pulvinar. Suspendisse convallis eros eget luctus viverra.
-					</p>
+					<h1 class="titles">Contact</h1>
+					<form id="contactForm" method="POST" action="sendmail.php">
+						<input type="text" name="name" placeholder="Your Name" required />
+						<input
+							type="email"
+							name="email"
+							placeholder="Your Email"
+							required
+						/>
+						<input type="tel" name="phone" placeholder="Your Phone Number" />
+						<textarea
+							name="message"
+							placeholder="Your Message"
+							required
+						></textarea>
+						<button type="submit">Submit</button>
+					</form>
 				</div>
 			</div>
 			<footer class="footer-nav">
