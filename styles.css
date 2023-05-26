@@ -34,7 +34,7 @@ body {
 	min-width: 100vw;
 	transition: width 1s, height 1s;
 	margin-top: 3rem;
-	margin-bottom: 20rem;
+	margin-bottom: 5rem;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	background-color: #f6f3f0;
 }
@@ -45,7 +45,8 @@ body {
 
 .job-role {
 	display: none;
-	font-size: 4.5rem;
+	font-size: 4.5vw;
+	font-family: monospace;
 	font-weight: lighter;
 	text-align: center;
 	color: #333333;
@@ -56,13 +57,38 @@ body {
 	display: block;
 }
 .greeting {
-	font-size: 12rem;
+	font-size: 10vw; /* Change to a relative unit like vw */
+	font-family: monospace;
 	text-align: center;
 	color: #333333;
-	animation: fadeIn 2s;
 	margin-bottom: 1rem;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-weight: 100;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: 0.15em solid #333333; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: #333333;
+	}
 }
 
 @keyframes fadeIn {
@@ -97,7 +123,7 @@ a:hover {
 	text-decoration: underline overline #383d3e;
 	transition: all 0.2s ease-in-out;
 }
-.footer-links {
+.contact-links {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -135,6 +161,9 @@ a:hover {
 	margin-top: 3rem;
 	padding-bottom: 0.5rem;
 	background-color: #f6f3f0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .content {
@@ -181,51 +210,57 @@ a:hover {
 
 @media screen and (max-width: 768px) {
 	.greeting {
-		font-size: 5rem;
+		font-size: 8vw; /* Adjust the font size for medium-sized screens */
 	}
 
 	.job-role {
-		font-size: 2rem;
+		font-size: 5vw; /* Adjust the font size for medium-sized screens */
 	}
-	.about-me {
-		font-size: 1rem;
-	}
-	.skills {
-		font-size: 1rem;
-	}
+	.about-me,
+	.skills,
+	.projects,
 	.contact-me {
-		font-size: 1rem;
-	}
-	.projects {
-		font-size: 1rem;
+		font-size: 1.5rem; /* Adjust the font size for medium-sized screens */
 	}
 
 	.titles {
-		font-size: 2.5rem;
+		font-size: 3.5rem; /* Adjust the font size for medium-sized screens */
 	}
 }
 
 @media screen and (max-width: 480px) {
 	.greeting {
-		font-size: 4rem;
+		font-size: 10vw; /* Adjust the font size for small screens */
 	}
 
 	.job-role {
-		font-size: 1.7rem;
+		font-size: 5vw; /* Adjust the font size for small screens */
 	}
-	.about-me {
-		font-size: 1rem;
-	}
-	.skills {
-		font-size: 1rem;
-	}
+	.about-me,
+	.skills,
+	.projects,
 	.contact-me {
-		font-size: 1rem;
+		font-size: 1.2rem; /* Adjust the font size for small screens */
 	}
-	.projects {
-		font-size: 1rem;
-	}
+
 	.titles {
-		font-size: 2.5rem;
+		font-size: 2.5rem; /* Adjust the font size for small screens */
 	}
+}
+
+.contact-table,
+td {
+	/* border: #383d3e solid 1px; */
+	width: 100%;
+	border-collapse: collapse;
+	padding: 1rem;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.contact-me {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 60vw;
 }
