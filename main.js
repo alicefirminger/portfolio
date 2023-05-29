@@ -33,3 +33,4 @@ document.addEventListener("DOMContentLoaded", function () {
 		scrollToSection(event, "contact");
 	});
 });
+
