@@ -4,7 +4,7 @@
 	--background-color: #f6f3f0;
 	--text-color: #333333;
 	--accent-color: #fff;
-	--button-accent-color: #d1d5db;
+	--button-accent-color: #949494;
 	--button-hover-color: #008000;
 }
 
@@ -21,7 +21,7 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 
 body {
@@ -48,6 +48,17 @@ body {
 	margin-bottom: 2rem;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	background-color: var(--accent-color);
+	flex-wrap: wrap;
+}
+
+.back-button {
+	width: 25px;
+	height: 25px;
+	border: 5px solid #333;
+	border-left: 0;
+	border-top: 0;
+	margin: 1rem 0 1rem 1rem;
+	transform: rotate(135deg);
 }
 
 .content {
@@ -72,7 +83,6 @@ body {
 .nav-links:visited {
 	color: var(--primary-color);
 	text-decoration: none;
-	font-size: 1.2rem;
 }
 
 .nav-links:hover {
@@ -91,14 +101,17 @@ body {
 
 .titles {
 	font-size: 4rem;
+	font-family: monospace;
 	letter-spacing: 0.2rem;
 	margin-bottom: 3rem;
+	padding-top: 2rem;
 	font-weight: 100;
 	font-variant: small-caps;
 	text-align: center;
 }
 .headings {
-	font-size: 2.7rem;
+	font-family: monospace;
+	font-size: 2rem;
 	margin-bottom: 3rem;
 	padding: 1rem 0;
 	font-weight: 100;
@@ -148,22 +161,32 @@ body {
 }
 
 .image-grid {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 1rem;
-  }
-  
-  .images {
-    padding: 1rem;
-    margin: 1rem;
-    width: calc((100% / 1) - 2rem); /* Adjust the number '3' to change the number of images per row */
-    max-width: 100%;
-    height: 50vh;
-    object-fit: contain;
-  }
-  
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: center;
+	margin: 1rem;
+	overflow-x: scroll;
+	width: 100%;
+}
 
+.images {
+	padding: 1rem;
+	margin: 1rem;
+	width: 400px;
+	height: auto;
+	object-fit: contain;
+}
+
+::-webkit-scrollbar {
+	color: var(--button-accent-color);
+	opacity: 0.3;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--button-accent-color);
+	scrollbar-width: thin;
+}
 
 .footer-nav {
 	flex-shrink: 0;
@@ -187,6 +210,13 @@ body {
 	height: auto;
 	margin: 1rem;
 }
+.icon-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	max-width: 70vw;
+	overflow-x: auto;
+}
 
 #site-link {
 	text-decoration: none;
@@ -209,7 +239,7 @@ body {
 /* for phone screens */
 @media screen and (max-width: 480px) {
 	.titles {
-		font-size: 2.5rem; /* Adjust the font size for medium-sized screens */
+		font-size: 6vw; /* Adjust the font size for mobile screens */
 	}
 	.headings {
 		font-size: 1.5rem;

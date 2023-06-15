@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
 	const aboutLink = document.querySelector('a[href="#about"]');
 	const projectsLink = document.querySelector('a[href="#projects"]');
@@ -33,3 +35,5 @@ document.addEventListener("DOMContentLoaded", function () {
 		scrollToSection(event, "contact");
 	});
 });
+
+
