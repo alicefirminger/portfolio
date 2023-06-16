@@ -206,75 +206,11 @@ body {
 	text-align: center;
 }
 
-/* For medium-sized screens e.g. tablet */
-@media screen and (max-width: 768px) {
-	.greeting {
-		font-size: 8vw; /* Adjust the font size for medium-sized screens */
-	}
-
-	.job-role {
-		font-size: 5vw; /* Adjust the font size for medium-sized screens */
-	}
-	.about-me,
-	.skills,
-	.projects,
-	.contact-me {
-		font-size: 1rem; /* Adjust the font size for medium-sized screens */
-	}
-
-	.titles {
-		font-size: 3.5rem; /* Adjust the font size for medium-sized screens */
-	}
-	.icons,
-	.contact-icon {
-		width: 20vw !important; /* Increase the width with !important */
-		height: auto;
-		margin: 1rem;
-	}
-	.contact-me {
-		text-align: left;
-	}
-	.body-container {
-		height: 10rem;
-	}
-	.body-container:hover {
-		height: 20rem;
-		cursor: pointer;
-	}
-}
-
-/* For small screens e.g. phone */
-@media screen and (max-width: 480px) {
-	.greeting {
-		font-size: 10vw; /* Adjust the font size for small screens */
-	}
-
-	.job-role {
-		font-size: 5vw; /* Adjust the font size for small screens */
-	}
-	.about-me,
-	.skills,
-	.projects,
-	.contact-me {
-		font-size: 1rem; /* Adjust the font size for small screens */
-	}
-
-	.titles {
-		font-size: 2.5rem; /* Adjust the font size for small screens */
-	}
-	.icons,
-	.contact-icon {
-		width: 20vw !important; /* Increase the width with !important */
-		height: auto;
-		margin: 1rem;
-	}
-	.body-container {
-		height: 10rem;
-	}
-	.body-container:hover {
-		height: 20rem;
-		cursor: pointer;
-	}
+.quote {
+	padding-top: 2rem;
+	padding-right: 2rem;
+	text-align: center;
+	font-style: oblique;
 }
 
 .contact-table,
@@ -426,4 +362,79 @@ td {
 #site-link:hover {
 	text-decoration: none;
 	color: var(--accent-color);
+}
+
+/* Responsiveness */
+/* For medium-sized screens e.g. tablet */
+@media screen and (max-width: 768px) {
+	.greeting {
+		font-size: 8vw; /* Adjust the font size for medium-sized screens */
+	}
+
+	.job-role {
+		font-size: 5vw; /* Adjust the font size for medium-sized screens */
+	}
+	.about-me,
+	.skills,
+	.projects,
+	.contact-me {
+		font-size: 1rem; /* Adjust the font size for medium-sized screens */
+	}
+
+	.titles {
+		font-size: 3.5rem; /* Adjust the font size for medium-sized screens */
+	}
+	.icons,
+	.contact-icon {
+		width: 20vw !important; /* Increase the width with !important */
+		height: auto;
+		margin: 1rem;
+	}
+	.contact-me {
+		text-align: left;
+	}
+	.body-container {
+		height: 10rem;
+	}
+	.body-container:hover {
+		height: 20rem;
+		cursor: pointer;
+	}
+}
+
+/* For small screens e.g. phone */
+@media screen and (max-width: 480px) {
+	.greeting {
+		font-size: 10vw; /* Adjust the font size for small screens */
+	}
+
+	.job-role {
+		font-size: 5vw; /* Adjust the font size for small screens */
+	}
+	.about-me,
+	.skills,
+	.projects,
+	.contact-me {
+		font-size: 1rem; /* Adjust the font size for small screens */
+	}
+
+	.titles {
+		font-size: 2.5rem; /* Adjust the font size for small screens */
+	}
+	.icons,
+	.contact-icon {
+		width: 20vw !important; /* Increase the width with !important */
+		height: auto;
+		margin: 1rem;
+	}
+	.body-container {
+		height: 10rem;
+	}
+	.body-container:hover {
+		height: 20rem;
+		cursor: pointer;
+	}
+	.portfolio-image {
+		display: hidden;
+	}
 }
