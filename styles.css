@@ -220,6 +220,7 @@ body {
 	.projects,
 	.contact-me {
 		font-size: 1rem; /* Adjust the font size for medium-sized screens */
+		width: auto;
 	}
 
 	.titles {
@@ -261,6 +262,7 @@ td {
 	display: flex;
 	flex-direction: column;
 	width: 70vw;
+	height: auto;
 }
 
 .slider {
@@ -298,9 +300,6 @@ td {
 	height: auto;
 }
 
-.contact-me {
-	height: auto;
-}
 .icon-container {
 	display: flex;
 	flex-direction: row;
