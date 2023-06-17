@@ -51,3 +51,35 @@ window.addEventListener("load", hideImageContainer);
 
 window.addEventListener("resize", hideImageContainer);
 // Call the hideImageContainer function when the window is resized
+
+// Optional: Wait for the page to load before executing the script
+document.addEventListener("DOMContentLoaded", function() {
+	var swipeText = document.querySelector(".swipe-text");
+	
+	// Get the width of the text element
+	var textWidth = swipeText.offsetWidth;
+	
+	// Set initial position of the text element
+	swipeText.style.transform = "translateX(" + textWidth + "px)";
+	
+	// Calculate the animation duration based on the text width
+	var animationDuration = textWidth * 10; // Adjust as needed
+	
+	// Function to animate the text element
+	function animateText() {
+	  var currentX = parseFloat(swipeText.style.transform.match(/-?\d+/)[0]);
+	  var newX = currentX - 1; // Adjust the speed by changing the increment value
+	  
+	  if (newX < -textWidth) {
+		newX = window.innerWidth; // Reset the position when it goes off-screen
+	  }
+	  
+	  swipeText.style.transform = "translateX(" + newX + "px)";
+	  
+	  requestAnimationFrame(animateText);
+	}
+	
+	// Start the animation
+	animateText();
+  });
+  

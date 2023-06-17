@@ -78,6 +78,8 @@ body {
 	animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
+/* ANIMATIONS */
+
 @keyframes typing {
 	from {
 		width: 0;
@@ -130,13 +132,18 @@ body {
 	text-decoration: underline overline var(--primary-color);
 	transition: all 0.2s ease-in-out;
 }
-.contact-links {
+
+.contact-table tr {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: nowrap;
 	justify-content: space-around;
-	width: 100vw;
-	list-style: none;
 	padding-top: 0.3rem;
+	align-items: center;
+}
+
+.contact-table td {
+	margin-right: 1rem; /* Adjust the margin as needed */
 }
 
 .wrapper {
@@ -211,15 +218,6 @@ body {
 	padding-right: 2rem;
 	text-align: center;
 	font-style: oblique;
-}
-
-.contact-table,
-td {
-	width: 80%;
-	border-collapse: collapse;
-	padding: 1rem;
-	box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-	align-self: center;
 }
 
 .contact-me {
@@ -386,19 +384,20 @@ td {
 	}
 	.icons,
 	.contact-icon {
-		width: 20vw !important; /* Increase the width with !important */
+		width: 11vw !important; /* Increase the width with !important */
 		height: auto;
 		margin: 1rem;
 	}
-	.contact-me {
-		text-align: left;
-	}
+
 	.body-container {
 		height: 10rem;
 	}
 	.body-container:hover {
 		height: 20rem;
 		cursor: pointer;
+	}
+	.slider > div {
+		height: 55vh;
 	}
 }
 
@@ -423,7 +422,7 @@ td {
 	}
 	.icons,
 	.contact-icon {
-		width: 20vw !important; /* Increase the width with !important */
+		width: 15vw !important; /* Increase the width with !important */
 		height: auto;
 		margin: 1rem;
 	}
@@ -436,5 +435,21 @@ td {
 	}
 	.portfolio-image {
 		display: hidden;
+	}
+	td {
+		text-align: center;
+	}
+
+	.contact-table tr {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		padding-top: 0.3rem;
+		align-items: center;
+	}
+
+	.slider > div {
+		height: 50vh;
 	}
 }
