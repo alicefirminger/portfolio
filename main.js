@@ -56,79 +56,29 @@ const elements = document.getElementsByClassName("swipe-text");
 const jTxt = "scroll for more ->"; /* The text */
 const jSpeed = 20; /* The speed/duration of the effect in milliseconds */
 
-// function typeWriter() {
-// 	for (let i = 0; i < elements.length; i++) {
-// 		const element = elements[i];
-// 		const j = element.innerHTML.length; // Separate j variable for each element
-
-// 		if (j < jTxt.length) {
-// 			element.innerHTML += jTxt.charAt(j);
-// 		}
-// 	}
-
-// 	let complete = true;
-// 	for (let i = 0; i < elements.length; i++) {
-// 		if (elements[i].innerHTML.length < jTxt.length) {
-// 			complete = false;
-// 			break;
-// 		}
-// 	}
-
-// 	if (!complete) {
-// 		setTimeout(typeWriter, jSpeed);
-// 	}
-// }
-
-// document.addEventListener("DOMContentLoaded", function () {
-// 	// Find the element to trigger the animation
-// 	const triggerElementProjects = document.querySelector('a[href="#projects"]');
-
-// 	// Add click event listener to trigger the animation
-// 	triggerElementProjects.addEventListener("click", function () {
-// 		typeWriter();
-// 	});
-// });
-
-
-document.addEventListener("DOMContentLoaded", function () {
-	// Find the elements to trigger the animations
-	const triggerElementProjects = document.querySelector('a[href="#projects"]');
-	const triggerElementSkills = document.querySelector('a[href="#skills"]');
-	
-	// Add click event listeners to trigger the animations
-	triggerElementProjects.addEventListener("click", function () {
-	  typeWriter("projects");
-	});
-	
-	triggerElementSkills.addEventListener("click", function () {
-	  typeWriter("skills");
-	});
-  });
-  
-  function typeWriter(target) {
-	const elements = document.getElementsByClassName(`swipe-text-${target}`);
-	const jTxt = "scroll for more ->"; /* The text */
-	const jSpeed = 20; /* The speed/duration of the effect in milliseconds */
-	
+function typeWriter() {
 	for (let i = 0; i < elements.length; i++) {
-	  const element = elements[i];
-	  const j = element.innerHTML.length; // Separate j variable for each element
-	
-	  if (j < jTxt.length) {
-		element.innerHTML += jTxt.charAt(j);
-	  }
+		const element = elements[i];
+		const j = element.innerHTML.length; // Separate j variable for each element
+
+		if (j < jTxt.length) {
+			element.innerHTML += jTxt.charAt(j);
+		}
 	}
-	
+
 	let complete = true;
 	for (let i = 0; i < elements.length; i++) {
-	  if (elements[i].innerHTML.length < jTxt.length) {
-		complete = false;
-		break;
-	  }
+		if (elements[i].innerHTML.length < jTxt.length) {
+			complete = false;
+			break;
+		}
 	}
-	
+
 	if (!complete) {
-	  setTimeout(() => typeWriter(target), jSpeed);
+		setTimeout(typeWriter, jSpeed);
 	}
-  }
-  
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+	typeWriter();
+});

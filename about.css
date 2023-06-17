@@ -62,10 +62,10 @@ body {
 }
 
 .content {
+	font-weight: 100;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	font-weight: 100;
+	align-items: center;
 }
 
 .links {
@@ -116,8 +116,11 @@ body {
 	font-weight: 100;
 }
 
-p {
+.text-content {
 	line-height: 1.6;
+	width: 50vw;
+	font-size: 1.5rem;
+	text-align: justify;
 }
 .button {
 	background-color: var(--primary-color);
@@ -242,10 +245,11 @@ p {
 		margin-bottom: 1.5rem;
 	}
 	.body-container {
-		padding: 1rem;
-	}
-	p {
 		padding-right: 1rem;
+	}
+	.text-content {
+		font-size: 1rem;
+		width: 70vw;
 	}
 	.icons {
 		width: 20vw !important; /* Increase the width with !important */
@@ -257,20 +261,29 @@ p {
 @media screen and (max-width: 480px) {
 	.titles {
 		font-size: 12vw;
-		line-height: 1.8rem; /* Adjust the font size for mobile screens */
+		line-height: 1.8rem;
 	}
 	.headings {
 		font-size: 1.5rem;
 		margin-bottom: 1rem;
+		margin-right: 1rem;
 	}
 	.body-container {
-		padding: 1rem;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
-	p {
-		padding-right: 1rem;
+	.content {
+		text-align: justify;
+		display: block;
 	}
+
 	.icons {
 		width: 20vw !important; /* Increase the width with !important */
 		height: auto;
+	}
+	.button {
+		margin-bottom: 2rem;
 	}
 }

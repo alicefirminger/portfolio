@@ -80,8 +80,7 @@ body {
 
 /* ANIMATIONS */
 
-.swipe-text-skills,
-.swipe-text-projects {
+.swipe-text {
 	text-align: right;
 	font-size: 1.3rem;
 }
