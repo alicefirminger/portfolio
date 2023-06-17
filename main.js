@@ -52,34 +52,33 @@ window.addEventListener("load", hideImageContainer);
 window.addEventListener("resize", hideImageContainer);
 // Call the hideImageContainer function when the window is resized
 
-// Optional: Wait for the page to load before executing the script
-document.addEventListener("DOMContentLoaded", function() {
-	var swipeText = document.querySelector(".swipe-text");
-	
-	// Get the width of the text element
-	var textWidth = swipeText.offsetWidth;
-	
-	// Set initial position of the text element
-	swipeText.style.transform = "translateX(" + textWidth + "px)";
-	
-	// Calculate the animation duration based on the text width
-	var animationDuration = textWidth * 10; // Adjust as needed
-	
-	// Function to animate the text element
-	function animateText() {
-	  var currentX = parseFloat(swipeText.style.transform.match(/-?\d+/)[0]);
-	  var newX = currentX - 1; // Adjust the speed by changing the increment value
-	  
-	  if (newX < -textWidth) {
-		newX = window.innerWidth; // Reset the position when it goes off-screen
-	  }
-	  
-	  swipeText.style.transform = "translateX(" + newX + "px)";
-	  
-	  requestAnimationFrame(animateText);
+const elements = document.getElementsByClassName("swipe-text");
+const jTxt = "scroll for more ->"; /* The text */
+const jSpeed = 20; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+	for (let i = 0; i < elements.length; i++) {
+		const element = elements[i];
+		const j = element.innerHTML.length; // Separate j variable for each element
+
+		if (j < jTxt.length) {
+			element.innerHTML += jTxt.charAt(j);
+		}
 	}
-	
-	// Start the animation
-	animateText();
-  });
-  
+
+	let complete = true;
+	for (let i = 0; i < elements.length; i++) {
+		if (elements[i].innerHTML.length < jTxt.length) {
+			complete = false;
+			break;
+		}
+	}
+
+	if (!complete) {
+		setTimeout(typeWriter, jSpeed);
+	}
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+	typeWriter();
+});

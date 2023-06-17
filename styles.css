@@ -80,6 +80,11 @@ body {
 
 /* ANIMATIONS */
 
+.swipe-text {
+	text-align: right;
+	font-size: 1.3rem;
+}
+
 @keyframes typing {
 	from {
 		width: 0;
