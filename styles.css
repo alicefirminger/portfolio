@@ -80,7 +80,8 @@ body {
 
 /* ANIMATIONS */
 
-.swipe-text {
+.swipe-text-skills,
+.swipe-text-projects {
 	text-align: right;
 	font-size: 1.3rem;
 }
@@ -256,6 +257,12 @@ body {
 	height: auto;
 	padding-top: 3rem;
 }
+.portfolio-image-hidden {
+	display: none;
+	width: 10rem;
+	height: auto;
+	justify-content: center;
+}
 
 .projects {
 	font-size: 1.5rem;
@@ -304,9 +311,14 @@ body {
 	padding: 0%;
 	height: auto;
 }
-
+.about-text {
+	text-align: justify;
+}
 .about-text-container {
 	padding: 0 1rem 1rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .portfolio-image-container {
 	max-width: 100vw;
@@ -441,6 +453,9 @@ body {
 	.portfolio-image {
 		display: hidden;
 	}
+	.portfolio-image-hidden {
+		display: block;
+	}
 	td {
 		text-align: center;
 	}
@@ -455,6 +470,6 @@ body {
 	}
 
 	.slider > div {
-		height: 50vh;
+		height: 55vh;
 	}
 }
