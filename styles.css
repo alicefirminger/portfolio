@@ -303,7 +303,7 @@ body {
 
 .slider,
 .icon-container {
-	scroll-snap-type: y mandatory;
+	scroll-snap-type: x mandatory;
 }
 
 .slider-panel,
