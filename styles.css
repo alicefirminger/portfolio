@@ -26,6 +26,10 @@ body {
 	margin: 0; /* Add this line to remove the margin */
 }
 
+html {
+	scroll-snap-type: y mandatory;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -59,6 +63,7 @@ body {
 	text-align: center;
 	color: var(--text-color);
 	animation: fadeIn 6s;
+	scroll-snap-align: center;
 }
 
 .body-container:hover .job-role {
@@ -76,6 +81,7 @@ body {
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+	scroll-snap-align: center;
 }
 
 /* ANIMATIONS */
@@ -205,6 +211,7 @@ body {
 	box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
 		rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 	/* border-radius: 1rem; */
+	scroll-snap-align: center;
 }
 
 .titles {
@@ -387,6 +394,11 @@ body {
 #site-link:hover {
 	text-decoration: none;
 	color: var(--accent-color);
+}
+
+.content,
+.body-container {
+	scroll-snap-type: y mandatory;
 }
 
 /* Responsiveness */

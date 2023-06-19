@@ -214,7 +214,7 @@ body {
 	width: 12vw;
 	height: auto;
 	margin: 1rem;
-	scroll-snap-align: center;
+	scroll-snap-align: start;
 }
 .icon-container {
 	display: flex;
@@ -223,7 +223,6 @@ body {
 	max-width: 70vw;
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
-	scroll-padding: 50%;
 }
 
 .copyright {
@@ -238,6 +237,9 @@ body {
 	text-decoration: none;
 	color: var(--accent-color);
 }
+
+
+  
 /* for tablet screens */
 @media screen and (max-width: 768px) {
 	.titles {
