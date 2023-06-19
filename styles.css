@@ -424,14 +424,12 @@ body {
 
 	.job-role {
 		font-size: 5vw; /* Adjust the font size for medium-sized screens */
-		scroll-snap-align: start;
 	}
 	.about-me,
 	.skills,
 	.projects,
 	.contact-me {
 		font-size: 1rem; /* Adjust the font size for medium-sized screens */
-		scroll-snap-align: start;
 	}
 
 	.titles {
@@ -454,29 +452,22 @@ body {
 	.slider > div {
 		height: 55vh;
 	}
-	.content,
-	.body-container {
-		scroll-snap-type: y mandatory;
-	}
 }
 
 /* For small screens e.g. phone */
 @media screen and (max-width: 480px) {
 	.greeting {
 		font-size: 10vw; /* Adjust the font size for small screens */
-		scroll-snap-align: start;
 	}
 
 	.job-role {
 		font-size: 5vw; /* Adjust the font size for small screens */
-		scroll-snap-align: start;
 	}
 	.about-me,
 	.skills,
 	.projects,
 	.contact-me {
 		font-size: 1rem; /* Adjust the font size for small screens */
-		scroll-snap-align: start;
 	}
 
 	.titles {
@@ -516,9 +507,5 @@ body {
 
 	.slider > div {
 		height: 55vh;
-	}
-	.content,
-	.body-container {
-		scroll-snap-type: y mandatory;
 	}
 }
