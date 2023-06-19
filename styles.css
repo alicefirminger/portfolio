@@ -304,11 +304,12 @@ body {
 .slider,
 .icon-container {
 	scroll-snap-type: x mandatory;
+	scroll-padding: 50%;
 }
 
 .slider-panel,
 .icons {
-	scroll-snap-align: start;
+	scroll-snap-align: center;
 }
 
 .about-me {

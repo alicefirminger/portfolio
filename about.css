@@ -214,6 +214,7 @@ body {
 	width: 12vw;
 	height: auto;
 	margin: 1rem;
+	scroll-snap-align: center;
 }
 .icon-container {
 	display: flex;
@@ -221,8 +222,10 @@ body {
 	flex-wrap: nowrap;
 	max-width: 70vw;
 	overflow-x: auto;
-	/* justify-content: center; */
+	scroll-snap-type: x mandatory;
+	scroll-padding: 50%;
 }
+
 .copyright {
 	text-align: center;
 }
@@ -287,4 +290,3 @@ body {
 		margin-bottom: 2rem;
 	}
 }
-
