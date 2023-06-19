@@ -82,3 +82,5 @@ function typeWriter() {
 document.addEventListener("DOMContentLoaded", function () {
 	typeWriter();
 });
+
+

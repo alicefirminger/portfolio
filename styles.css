@@ -301,6 +301,16 @@ body {
 	scrollbar-width: thin;
 }
 
+.slider,
+.icon-container {
+	scroll-snap-type: y mandatory;
+}
+
+.slider-panel,
+.icons {
+	scroll-snap-align: start;
+}
+
 .about-me {
 	display: flex;
 	flex-direction: row;

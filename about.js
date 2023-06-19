@@ -30,18 +30,4 @@ document.addEventListener("DOMContentLoaded", function () {
 	typeWriter();
 });
 
-// function scaleAnimation() {
-// 	const element = document.getElementById("animated-text");
-// 	element.style.transition = "transform 0.3s"; // Set the transition duration
 
-// 	// Apply the scale transformation
-// 	element.style.transform = "scale(1.5)"; // Increase the scale to 1.5 times the original size
-
-// 	// Revert the scale back to the original size after a delay
-// 	setTimeout(() => {
-// 		element.style.transform = "scale(1)"; // Set the scale back to the original size
-// 	}, 1000); // Delay in milliseconds before reverting the scale
-// }
-
-// // Call the animation function
-// scaleAnimation();
