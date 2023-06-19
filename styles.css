@@ -63,7 +63,6 @@ body {
 	text-align: center;
 	color: var(--text-color);
 	animation: fadeIn 6s;
-	scroll-snap-align: center;
 }
 
 .body-container:hover .job-role {
@@ -81,7 +80,6 @@ body {
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-	scroll-snap-align: center;
 }
 
 /* ANIMATIONS */
@@ -211,7 +209,6 @@ body {
 	box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
 		rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 	/* border-radius: 1rem; */
-	scroll-snap-align: center;
 }
 
 .titles {
@@ -308,17 +305,6 @@ body {
 	scrollbar-width: thin;
 }
 
-.slider,
-.icon-container {
-	scroll-snap-type: x mandatory;
-	scroll-padding: 50%;
-}
-
-.slider-panel,
-.icons {
-	scroll-snap-align: center;
-}
-
 .about-me {
 	display: flex;
 	flex-direction: row;
@@ -396,9 +382,36 @@ body {
 	color: var(--accent-color);
 }
 
+/* vertical snap points*/
+
 .content,
 .body-container {
 	scroll-snap-type: y mandatory;
+}
+
+.greeting {
+	scroll-snap-align: center;
+}
+.job-role {
+	scroll-snap-align: center;
+}
+
+.about-me,
+.projects,
+.skills,
+.contact-me {
+	scroll-snap-align: center;
+}
+
+.slider,
+.icon-container {
+	scroll-snap-type: x mandatory;
+	scroll-padding: 50%;
+}
+
+.slider-panel,
+.icons {
+	scroll-snap-align: center;
 }
 
 /* Responsiveness */
@@ -406,16 +419,19 @@ body {
 @media screen and (max-width: 768px) {
 	.greeting {
 		font-size: 8vw; /* Adjust the font size for medium-sized screens */
+		scroll-snap-align: start;
 	}
 
 	.job-role {
 		font-size: 5vw; /* Adjust the font size for medium-sized screens */
+		scroll-snap-align: start;
 	}
 	.about-me,
 	.skills,
 	.projects,
 	.contact-me {
 		font-size: 1rem; /* Adjust the font size for medium-sized screens */
+		scroll-snap-align: start;
 	}
 
 	.titles {
@@ -438,22 +454,29 @@ body {
 	.slider > div {
 		height: 55vh;
 	}
+	.content,
+	.body-container {
+		scroll-snap-type: y mandatory;
+	}
 }
 
 /* For small screens e.g. phone */
 @media screen and (max-width: 480px) {
 	.greeting {
 		font-size: 10vw; /* Adjust the font size for small screens */
+		scroll-snap-align: start;
 	}
 
 	.job-role {
 		font-size: 5vw; /* Adjust the font size for small screens */
+		scroll-snap-align: start;
 	}
 	.about-me,
 	.skills,
 	.projects,
 	.contact-me {
 		font-size: 1rem; /* Adjust the font size for small screens */
+		scroll-snap-align: start;
 	}
 
 	.titles {
@@ -493,5 +516,9 @@ body {
 
 	.slider > div {
 		height: 55vh;
+	}
+	.content,
+	.body-container {
+		scroll-snap-type: y mandatory;
 	}
 }
