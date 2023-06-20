@@ -391,7 +391,7 @@ body {
 }
 
 /* vertical snap points*/
-
+/* 
 html {
 	scroll-snap-type: y mandatory;
 }
@@ -412,7 +412,7 @@ section {
 	height: 100vh;
 	width: 100vw;
 	scroll-snap-align: center !important;
-}
+} */
 
 /* Responsiveness */
 /* For medium-sized screens e.g. tablet */
