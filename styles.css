@@ -395,6 +395,27 @@ body {
 .content {
 	scroll-snap-type: y mandatory;
 }
+html {
+	scroll-snap-type: y mandatory;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	scroll-snap-align: start;
+}
+
+.banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 100vh;
+	width: 100vw;
+	scroll-snap-align: center !important;
+}
 
 /* Responsiveness */
 /* For medium-sized screens e.g. tablet */
