@@ -8,7 +8,7 @@ if (window.location.pathname === "/recipes.html") {
 } else if (window.location.pathname === "/swapp.html") {
 	txt = "Project: swAPP";
 } else if (window.location.pathname === "/maps.html") {
-	txt = "Project: map finder";
+	txt = "Project: flag finder";
 } else if (window.location.pathname === "/resources.html") {
 	txt = "Project: tech resource finder";
 } else {
@@ -29,5 +29,3 @@ function typeWriter() {
 document.addEventListener("DOMContentLoaded", function () {
 	typeWriter();
 });
-
-
