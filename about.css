@@ -315,7 +315,7 @@ body {
 /* for phone screens */
 @media screen and (max-width: 480px) {
 	.titles {
-		font-size: 12vw;
+		font-size: 9vw;
 		line-height: 1.8rem;
 	}
 	.headings {
@@ -357,11 +357,11 @@ body {
 		height: auto;
 	}
 	.resource-app-image {
-		height: 10rem;
+		height: 8rem;
 		width: auto;
 	}
 	.recipe-app-image {
-		height: 11rem;
+		height: 10rem;
 		width: auto;
 	}
 	.titles,
