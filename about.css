@@ -41,7 +41,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 	padding: 4rem;
 	margin-left: 1rem;
 	margin-right: 1rem;
@@ -174,6 +173,16 @@ body {
 	overflow-x: scroll;
 	width: 100%;
 }
+.map-image-grid {
+	justify-content: center;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: center;
+	margin: 1rem;
+	overflow-x: scroll;
+	width: 100%;
+}
 
 .images {
 	padding: 1rem;
@@ -183,11 +192,27 @@ body {
 	object-fit: contain;
 }
 
-.app-image{
-	height:25rem;
+.app-image {
+	height: 25rem;
 	width: auto;
 }
+.resource-app-image {
+	height: 13rem;
+	width: auto;
+}
+.recipe-app-image {
+	height: 17rem;
+	width: auto;
+}
+.images-container {
+	display: flex;
+	flex-direction: row;
+}
 
+.heading-icon-container {
+	text-align: center;
+	padding-left: 2rem;
+}
 ::-webkit-scrollbar {
 	color: var(--button-accent-color);
 	opacity: 0.3;
@@ -243,8 +268,6 @@ body {
 	color: var(--accent-color);
 }
 
-
-  
 /* for tablet screens */
 @media screen and (max-width: 768px) {
 	.titles {
@@ -265,6 +288,28 @@ body {
 		width: 20vw !important; /* Increase the width with !important */
 		height: auto;
 	}
+	.images-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.heading-icon-container {
+		text-align: left;
+		padding: 0;
+	}
+	.app-image {
+		width: 10rem;
+		height: auto;
+	}
+	.resource-app-image {
+		height: 20rem;
+		width: auto;
+	}
+	.recipe-app-image {
+		height: 20rem;
+		width: auto;
+	}
 }
 
 /* for phone screens */
@@ -283,6 +328,7 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-left: 0.3;
 	}
 	.content {
 		text-align: justify;
@@ -295,5 +341,27 @@ body {
 	}
 	.button {
 		margin-bottom: 2rem;
+	}
+	.images-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.heading-icon-container {
+		text-align: left;
+		padding: 0;
+	}
+	.app-image {
+		width: 10rem;
+		height: auto;
+	}
+	.resource-app-image {
+		height: 10rem;
+		width: auto;
+	}
+	.recipe-app-image {
+		height: 11rem;
+		width: auto;
 	}
 }

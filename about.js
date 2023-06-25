@@ -10,7 +10,7 @@ if (window.location.pathname === "/recipes.html") {
 } else if (window.location.pathname === "/maps.html") {
 	txt = "Project: flag finder";
 } else if (window.location.pathname === "/resources.html") {
-	txt = "Project: tech resource finder";
+	txt = "Project: Bootcamper's Treasure Chest";
 } else {
 	txt = "Project"; // Default text if the page doesn't match any condition
 }
