@@ -65,7 +65,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
+	margin-bottom: 2rem;
 }
 
 .links {
@@ -208,6 +208,7 @@ body {
 .images-container {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 .heading-container {
 	display: flex;
@@ -215,7 +216,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-  }
+}
 .heading-icon-container {
 	text-align: center;
 	padding-left: 2rem;
@@ -368,7 +369,7 @@ body {
 		width: auto;
 	}
 	.recipe-app-image {
-		height: 10rem;
+		height: 8rem;
 		width: auto;
 	}
 	.titles,
@@ -387,6 +388,5 @@ body {
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-	  }
-	  
+	}
 }
