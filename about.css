@@ -365,8 +365,12 @@ body {
 		width: auto;
 	}
 	.titles,
-	.headings,
+	.headings {
+		text-align: center;
+	}
 	.text-content {
-	  text-align: center;
+		text-align: justify;
+		margin: 0 auto;
+		max-width: 70vw;
 	}
 }
