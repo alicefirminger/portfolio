@@ -65,12 +65,16 @@ body {
 .body-container:hover .job-role {
 	display: block;
 }
+.body-container:hover .down-icon {
+	display: none;
+}
 .greeting {
 	font-size: 10vw; /* Change to a relative unit like vw */
 	font-family: monospace;
 	text-align: center;
 	color: var(--text-color);
 	margin-bottom: 1rem;
+	padding-top: 5rem;
 	font-weight: 100;
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
 	border-right: 0.15em solid var(--text-color); /* The typwriter cursor */
@@ -287,6 +291,11 @@ body {
 	margin: 1rem;
 }
 
+.down-icon {
+	padding-top: 5rem;
+	width: 1.5rem;
+	height: auto;
+}
 .slider-panel {
 	box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
 		rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
@@ -442,14 +451,19 @@ section {
 	}
 
 	.body-container {
-		height: 10rem;
+		height: 20rem;
 	}
 	.body-container:hover {
-		height: 20rem;
+		height: 30rem;
 		cursor: pointer;
 	}
 	.slider > div {
 		height: 55vh;
+	}
+	.down-icon {
+		/* padding-top: 1.5rem; */
+		width: 1rem;
+		height: auto;
 	}
 }
 
@@ -457,6 +471,7 @@ section {
 @media screen and (max-width: 480px) {
 	.greeting {
 		font-size: 10vw; /* Adjust the font size for small screens */
+		padding-top: 1rem;
 	}
 
 	.job-role {
@@ -506,5 +521,10 @@ section {
 
 	.slider > div {
 		height: 55vh;
+	}
+	.down-icon {
+		padding-top: 2rem;
+		width: 0.7rem;
+		height: auto;
 	}
 }

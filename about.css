@@ -178,9 +178,14 @@ body {
 .images {
 	padding: 1rem;
 	margin: 1rem;
-	width: 400px;
-	height: auto;
+	height: 300px;
+	width: auto;
 	object-fit: contain;
+}
+
+.app-image{
+	height:25rem;
+	width: auto;
 }
 
 ::-webkit-scrollbar {
