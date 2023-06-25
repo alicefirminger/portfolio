@@ -321,7 +321,7 @@ body {
 	.headings {
 		font-size: 1.5rem;
 		margin-bottom: 1rem;
-		margin-right: 1rem;
+		align-self: center;
 	}
 	.body-container {
 		padding: 0;
@@ -363,5 +363,10 @@ body {
 	.recipe-app-image {
 		height: 11rem;
 		width: auto;
+	}
+	.titles,
+	.headings,
+	.text-content {
+	  text-align: center;
 	}
 }
