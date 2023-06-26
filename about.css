@@ -224,7 +224,6 @@ li::before {
 	width: 100%;
 }
 .map-image-grid {
-	
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: row;
@@ -271,7 +270,6 @@ li::before {
 	text-align: center;
 	margin-bottom: 3rem;
 	margin-top: 3rem;
-	
 }
 .features-list-container {
 	display: flex;
@@ -428,6 +426,7 @@ li::before {
 	.app-image {
 		width: 10rem;
 		height: auto;
+		margin-right: 0;
 	}
 	.resource-app-image {
 		height: 8rem;
@@ -468,6 +467,6 @@ li::before {
 		width: 80vw;
 		text-align: left;
 		list-style-position: outside;
-		padding-left: 1.3rem;
+		padding-left: 1.8rem;
 	}
 }
