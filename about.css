@@ -131,33 +131,40 @@ body {
 	text-align: left;
 	font-weight: 100;
 	font-family: "Manrope", sans-serif;
-	list-style-image: url("./images/extension-puzzle-outline.svg");
 	list-style-position: outside;
-}
-
-ol li::marker {
+	padding-left: 1.8rem;
+  }
+  
+  li {
+	position: relative;
+	padding-left: 2.5rem;
+	display: flex;
+	align-items: center;
+  }
+  
+  li::before {
+	content: "";
+	position: absolute;
+	top: 3%;
+	left: 0;
 	width: 2rem;
 	height: 2rem;
-}
-li {
-	padding-left: 0.5rem;
-}
-/* li {
-	counter-increment: my-awesome-counter;
-	
-}
-li::before {
-	background: var(--text-color);
-	width: 2rem;
-	height: 2rem;
-	border-radius: 50%;
-	display: inline-block;
-	line-height: 2rem;
-	color: white;
-	text-align: center;
 	margin-right: 0.5rem;
-	
-} */
+	background: url("./images/play-circle.svg") no-repeat;
+	background-size: contain;
+  }
+  
+.learned-list::before {
+	content: "";
+	position: absolute;
+	top: 3%;
+	left: 0;
+	width: 2rem;
+	height: 2rem;
+	margin-right: 0.5rem;
+	background: url("./images/play.svg") no-repeat;
+	background-size: contain;
+}
 
 .number-circle {
 	border-radius: 50%;
