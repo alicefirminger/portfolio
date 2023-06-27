@@ -132,17 +132,18 @@ body {
 	font-weight: 100;
 	font-family: "Manrope", sans-serif;
 	list-style-position: outside;
-	padding-left: 1.8rem;
-  }
-  
-  li {
+	padding-left: 0; /* Remove the left padding */
+	margin-left: 1rem;
+}
+
+li {
 	position: relative;
 	padding-left: 2.5rem;
 	display: flex;
 	align-items: center;
-  }
-  
-  li::before {
+}
+
+li::before {
 	content: "";
 	position: absolute;
 	top: 3%;
@@ -152,8 +153,12 @@ body {
 	margin-right: 0.5rem;
 	background: url("./images/play-circle.svg") no-repeat;
 	background-size: contain;
-  }
-  
+}
+
+.list li {
+	margin-bottom: 0.7rem; /* Adjust the margin as per your desired spacing */
+}
+
 .learned-list::before {
 	content: "";
 	position: absolute;
@@ -434,6 +439,7 @@ body {
 		width: 10rem;
 		height: auto;
 		margin-right: 0;
+		margin-bottom: 1rem;
 	}
 	.resource-app-image {
 		height: 8rem;
@@ -470,10 +476,15 @@ body {
 		justify-content: center;
 	}
 	.list {
-		font-size: 1.1rem;
+		font-size: 1rem;
 		width: 80vw;
 		text-align: left;
 		list-style-position: outside;
-		padding-left: 1.8rem;
+		padding-left: 0; /* Remove the left padding */
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
+	.list li {
+		margin-bottom: 1rem; /* Adjust the margin as per your desired spacing */
 	}
 }
