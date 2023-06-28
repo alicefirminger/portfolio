@@ -216,12 +216,12 @@ li::before {
 	box-shadow: none;
 }
 
-#site-link {
+.site-link {
 	text-decoration: none;
 	color: var(--accent-color);
 }
 
-#site-link:hover {
+.site-link:hover {
 	text-decoration: none;
 	color: var(--accent-color);
 }
