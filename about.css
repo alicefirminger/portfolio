@@ -364,7 +364,7 @@ li::before {
 		padding-right: 1rem;
 	}
 	.text-content {
-		font-size: 1rem;
+		font-size: 1.5rem;
 		width: 70vw;
 	}
 	.icons {
@@ -392,6 +392,10 @@ li::before {
 	.recipe-app-image {
 		height: 20rem;
 		width: auto;
+	}
+	.demo-video {
+		width: 80vw;
+		height: 30vh;
 	}
 }
 
@@ -486,5 +490,9 @@ li::before {
 	}
 	.list li {
 		margin-bottom: 1rem; /* Adjust the margin as per your desired spacing */
+	}
+	.demo-video {
+		width: 80vw;
+		height: 30vh;
 	}
 }
