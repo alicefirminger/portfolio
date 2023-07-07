@@ -521,7 +521,7 @@ section {
 	}
 	.icons,
 	.contact-icon {
-		width: 15vw !important; /* Increase the width with !important */
+		width: 20vw !important; /* Increase the width with !important */
 		height: auto;
 		margin: 1rem;
 	}
@@ -553,7 +553,7 @@ section {
 	}
 
 	.slider > div {
-		height: 50vh;
+		height: 55vh;
 	}
 	.down-icon {
 		padding-top: 2rem;
