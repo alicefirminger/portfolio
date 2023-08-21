@@ -52,9 +52,7 @@ window.addEventListener("load", hideImageContainer);
 window.addEventListener("resize", hideImageContainer);
 // Call the hideImageContainer function when the window is resized
 
-const elements = document.getElementsByClassName("swipe-text");
-const jTxt = "scroll for more ->"; /* The text */
-const jSpeed = 20; /* The speed/duration of the effect in milliseconds */
+
 
 function typeWriter() {
 	for (let i = 0; i < elements.length; i++) {

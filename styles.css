@@ -199,7 +199,7 @@ body {
 .skills,
 .projects,
 .contact-me {
-	padding: 3rem 1rem 2rem 1rem;
+	padding: 1rem 1rem 2rem 1rem;
 	margin-top: 1rem;
 	margin-bottom: 4rem;
 	width: 95vw;
@@ -250,16 +250,15 @@ body {
 .slider > div {
 	/* make sure the width is honored */
 	flex-shrink: 0.13;
-	width: 500px;
+	width: 650px;
 	height: 600px;
-	margin: 0.5rem;
 	padding-top: 1rem;
 }
 
 #image {
 	width: auto;
-	height: 50vh;
-	padding: 1rem;
+	height: 60vh;
+	padding: 0 1rem 1rem 1rem;
 }
 .portfolio-image-hidden {
 	display: none;
@@ -297,8 +296,6 @@ body {
 	height: auto;
 }
 .slider-panel {
-	box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
-		rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -478,15 +475,14 @@ section {
 		cursor: pointer;
 	}
 	.slider > div {
-		height: 60vh;
+		height: 75vh;
 	}
 	.down-icon {
 		/* padding-top: 1.5rem; */
 		width: 1rem;
 		height: auto;
 	}
-	
-	
+
 	/* Bottom right text */
 	.text-block {
 		display: flex;
@@ -521,7 +517,10 @@ section {
 	}
 
 	.titles {
-		font-size: 2.5rem; /* Adjust the font size for small screens */
+		font-size: 4rem;
+		margin-bottom: 2rem;
+		margin-top: 1rem;
+		/* Adjust the font size for small screens */
 	}
 	.icons,
 	.contact-icon {
@@ -545,6 +544,7 @@ section {
 	}
 	td {
 		text-align: center;
+		font-size: 1.3rem;
 	}
 
 	.contact-table tr {
@@ -557,15 +557,14 @@ section {
 	}
 
 	.slider > div {
-		height: 65vh;
+		height: 70vh;
 	}
 	.down-icon {
 		padding-top: 2rem;
 		width: 0.7rem;
 		height: auto;
 	}
-	
-	
+
 	/* Bottom right text */
 	.text-block {
 		display: flex;
@@ -573,15 +572,15 @@ section {
 		top: 0px;
 		right: 10px;
 		left: 10px;
-		height: 2vh;
+		height: 4vh;
 		align-items: center;
 		justify-content: center;
 		background: rgba(0, 0, 0, 0.7);
 		color: white;
-		font-size: 3vw;
+		font-size: 4vw;
 	}
 
 	.about-text-container {
-		padding: 0 2rem 1rem 2rem;
+		padding: 0 2rem 2rem 2rem;
 	}
 }
