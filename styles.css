@@ -251,15 +251,15 @@ body {
 	/* make sure the width is honored */
 	flex-shrink: 0.13;
 	width: 500px;
-	height: 450px;
+	height: 600px;
 	margin: 0.5rem;
 	padding-top: 1rem;
 }
 
 #image {
-	width: 100%;
-	height: auto;
-	padding-top: 3rem;
+	width: auto;
+	height: 50vh;
+	padding: 1rem;
 }
 .portfolio-image-hidden {
 	display: none;
@@ -299,6 +299,10 @@ body {
 .slider-panel {
 	box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
 		rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 ::-webkit-scrollbar {
@@ -474,7 +478,7 @@ section {
 		cursor: pointer;
 	}
 	.slider > div {
-		height: 55vh;
+		height: 60vh;
 	}
 	.down-icon {
 		/* padding-top: 1.5rem; */
@@ -553,7 +557,7 @@ section {
 	}
 
 	.slider > div {
-		height: 55vh;
+		height: 65vh;
 	}
 	.down-icon {
 		padding-top: 2rem;
