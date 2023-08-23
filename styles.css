@@ -1,7 +1,11 @@
 /* Global Styles*/
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@300&display=swap");
+
 :root {
 	--primary-color: #383d3e;
-	--background-color: #f6f3f0;
+	--background-color: #efeee6;
 	--text-color: #333333;
 	--accent-color: #fff;
 	--button-accent-color: #949494;
@@ -19,7 +23,7 @@ body {
 	box-sizing: border-box;
 	height: 100vh;
 	width: 100vw;
-	font-family: "Manrope", sans-serif;
+	font-family: "Quicksand", sans-serif;
 	color: var(--text-color);
 	background-color: var(--background-color);
 	font-size: 16px;
@@ -38,21 +42,19 @@ body {
 	align-items: center;
 	flex-direction: column;
 	flex-wrap: wrap;
-	height: 25rem;
+	height: 100vh;
 	min-width: 100vw;
-	transition: width 1s, height 1s;
-	margin-top: 3rem;
+	/* transition: width 1s, height 1s; */
 	margin-bottom: 5rem;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 	background-color: var(--background-color);
 }
-.body-container:hover {
+/* .body-container:hover {
 	height: 47rem;
 	cursor: pointer;
-}
+} */
 
 .job-role {
-	display: none;
 	font-size: 4.5vw;
 	font-family: monospace;
 	font-weight: lighter;
@@ -62,15 +64,15 @@ body {
 	scroll-snap-align: center;
 }
 
-.body-container:hover .job-role {
+/* .body-container:hover .job-role {
 	display: block;
-}
-.body-container:hover .down-icon {
+} */
+/* .body-container:hover .down-icon {
 	display: none;
-}
+}  */
 .greeting {
 	font-size: 10vw; /* Change to a relative unit like vw */
-	font-family: monospace;
+	font-family: "Archivo Black", sans-serif;
 	text-align: center;
 	color: var(--text-color);
 	margin-bottom: 1rem;
@@ -175,14 +177,15 @@ body {
 	padding-bottom: 1rem;
 	padding-top: 1rem;
 	margin-bottom: 2rem;
+	z-index: 10;
 }
 .body {
 	flex-grow: 1;
 }
 
 .footer-nav {
-	margin-top: 3rem;
-	padding-bottom: 0.5rem;
+	margin-top: 1rem;
+	padding-bottom: 1rem;
 	background-color: var(--background-color);
 	display: flex;
 	flex-direction: row;
@@ -193,27 +196,29 @@ body {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	background-color: var(--background-color);
 }
 
 .about-me,
 .skills,
 .projects,
 .contact-me {
-	padding: 1rem 1rem 2rem 1rem;
+	padding: 8rem 1rem 8rem 1rem;
 	margin-top: 1rem;
 	margin-bottom: 4rem;
 	width: 95vw;
 	line-height: 2rem;
 	text-align: justify;
 	font-size: 1.3rem;
-	background-color: var(--accent-color);
-	box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-		rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+	background-color: var(--background-color);
+	/* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+		rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
 	/* border-radius: 1rem; */
 }
 
 .titles {
-	font-family: monospace;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 900;
 	font-size: 4.7rem;
 	letter-spacing: 0.5rem;
 	margin-bottom: 3rem;
@@ -262,8 +267,8 @@ body {
 }
 .portfolio-image-hidden {
 	display: none;
-	width: 10rem;
-	height: auto;
+	width: auto;
+	height: 12rem;
 	justify-content: center;
 }
 
@@ -271,6 +276,9 @@ body {
 	font-size: 1.5rem;
 	height: auto;
 	text-align: center;
+	padding: 1rem;
+	margin-top: 0;
+	padding-top: 0;
 }
 
 .skills {
@@ -326,17 +334,21 @@ body {
 .about-me {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 	flex-wrap: nowrap;
-	box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
-		rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-	padding: 0%;
+	/* box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+		rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; */
+	padding-top: 4rem;
+	padding-bottom: 10rem;
 	height: auto;
 }
 .about-text {
 	text-align: justify;
+	width: 30vw;
 }
 .about-text-container {
-	padding: 0 6rem 1rem 6rem;
+	padding: 2rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -349,6 +361,7 @@ body {
 .portfolio-image {
 	max-width: 30vw;
 	object-fit: cover;
+	border-radius: 50%;
 }
 
 .contact-icon {
@@ -468,12 +481,12 @@ section {
 	}
 
 	.body-container {
-		height: 20rem;
+		height: 100vh;
 	}
-	.body-container:hover {
+	/* .body-container:hover {
 		height: 30rem;
 		cursor: pointer;
-	}
+	} */
 	.slider > div {
 		height: 75vh;
 	}
@@ -502,7 +515,7 @@ section {
 /* For small screens e.g. phone */
 @media screen and (max-width: 480px) {
 	.greeting {
-		font-size: 10vw; /* Adjust the font size for small screens */
+		font-size: 12vw; /* Adjust the font size for small screens */
 		padding-top: 1rem;
 	}
 
@@ -514,11 +527,14 @@ section {
 	.projects,
 	.contact-me {
 		font-size: 1rem; /* Adjust the font size for small screens */
+		padding: 0 1rem 2rem 1rem;
+		margin-top: 0;
+		width: 100vw;
 	}
 
 	.titles {
 		font-size: 3rem;
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 		margin-top: 1rem;
 		/* Adjust the font size for small screens */
 	}
@@ -529,18 +545,20 @@ section {
 		margin: 1rem;
 	}
 	.body-container {
-		height: 10rem;
+		height: 100vh;
+		margin-bottom: 0;
 	}
-	.body-container:hover {
-		height: 20rem;
+	/* .body-container:hover {
+		height: 25rem;
 		cursor: pointer;
-	}
+	} */
 	.portfolio-image {
 		display: hidden;
 	}
 	.portfolio-image-hidden {
 		display: block;
 		margin-top: 1rem;
+		border-radius: 50%;
 	}
 	td {
 		text-align: center;
@@ -582,5 +600,13 @@ section {
 
 	.about-text-container {
 		padding: 0 2rem 2rem 2rem;
+	}
+	.about-text {
+		text-align: justify;
+		width: 80vw;
+		font-size: 1.3rem;
+	}
+	.quote {
+		font-size: 1.3rem;
 	}
 }
