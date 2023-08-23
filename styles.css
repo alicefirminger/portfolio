@@ -579,7 +579,7 @@ section {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		height: 85vh;
+		height: 100vh;
 		scroll-snap-type: x mandatory;
 		-webkit-overflow-scrolling: touch;
 		overflow-x: scroll;
