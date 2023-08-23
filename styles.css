@@ -579,7 +579,7 @@ section {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		height: 100vh;
+		height: 80vh;
 		scroll-snap-type: x mandatory;
 		-webkit-overflow-scrolling: touch;
 		overflow-x: scroll;
@@ -624,5 +624,13 @@ section {
 	}
 	.quote {
 		font-size: 1.1rem;
+	}
+
+	.button {
+		margin: 0.5rem;
+		width: 30vw;
+	}
+	.button-container {
+		width: 100vw;
 	}
 }
