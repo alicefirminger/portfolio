@@ -243,22 +243,29 @@ body {
 }
 
 .slider {
-	/* line them up horizontally */
 	display: flex;
-
-	/* allow for scrolling */
-	overflow-x: auto;
-
-	/* make it smooth on iOS */
-	-webkit-overflow-scrolling: touch;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
-.slider > div {
-	/* make sure the width is honored */
-	flex-shrink: 0.13;
+
+/* .slider { */
+/* line them up horizontally */
+/* display: flex; */
+
+/* allow for scrolling */
+/* overflow-x: auto; */
+
+/* make it smooth on iOS */
+/* -webkit-overflow-scrolling: touch;
+} */
+/* .slider > div { */
+/* make sure the width is honored */
+/* flex-shrink: 0.13;
 	width: 650px;
 	height: 600px;
 	padding-top: 1rem;
-}
+} */
 
 #image {
 	width: auto;
@@ -288,8 +295,9 @@ body {
 .icon-container {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
-	overflow-x: scroll;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .icons {
@@ -306,29 +314,16 @@ body {
 .slider-panel {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: center;
 }
 
 ::-webkit-scrollbar {
 	color: var(--button-accent-color);
-	opacity: 0.3;
 }
 
 ::-webkit-scrollbar-thumb {
 	background-color: var(--button-accent-color);
-	scrollbar-width: thin;
-}
-
-.slider,
-.icon-container {
-	scroll-snap-type: x mandatory;
-	scroll-padding: 50%;
-}
-
-.slider-panel,
-.icons {
-	scroll-snap-align: center;
 }
 
 .about-me {
@@ -510,6 +505,12 @@ section {
 		color: white;
 		font-size: 2vw;
 	}
+
+	.about-text {
+		text-align: justify;
+		width: 60vw;
+		font-size: 1.1rem;
+	}
 }
 
 /* For small screens e.g. phone */
@@ -533,7 +534,7 @@ section {
 	}
 
 	.titles {
-		font-size: 3rem;
+		font-size: 2.2rem;
 		margin-bottom: 1rem;
 		margin-top: 1rem;
 		/* Adjust the font size for small screens */
@@ -574,9 +575,24 @@ section {
 		align-items: center;
 	}
 
-	.slider > div {
-		height: 70vh;
+	.slider {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		height: 80vh;
+		scroll-snap-type: x mandatory;
+		-webkit-overflow-scrolling: touch;
+		overflow-x: scroll;
 	}
+
+	.slider-panel {
+		height: 100vh;
+		width: 100vw;
+		scroll-snap-align: center;
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
 	.down-icon {
 		padding-top: 2rem;
 		width: 0.7rem;
@@ -604,9 +620,9 @@ section {
 	.about-text {
 		text-align: justify;
 		width: 80vw;
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 	}
 	.quote {
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 	}
 }

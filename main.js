@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		const section = document.getElementById(sectionId);
 		const sectionOffsetTop = section.offsetTop;
 		const windowHeight = window.innerHeight;
-		const scrollToPosition = sectionOffsetTop - windowHeight / 8;
+		const scrollToPosition = sectionOffsetTop - windowHeight / 16;
 
 		window.scrollTo({
 			top: scrollToPosition,
