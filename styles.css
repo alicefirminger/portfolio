@@ -185,8 +185,8 @@ body {
 
 .footer-nav {
 	margin-top: 1rem;
-	padding-bottom: 1rem;
-	background-color: var(--background-color);
+	padding-bottom: rem;
+	padding-top: 1rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -238,8 +238,11 @@ body {
 .contact-me {
 	display: flex;
 	flex-direction: column;
-	width: 95vw;
-	height: auto;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: #6B5255;
+	color: white;
 }
 
 .slider {
@@ -277,6 +280,7 @@ body {
 	width: auto;
 	height: 12rem;
 	justify-content: center;
+	border: solid 2px white;
 }
 
 .projects {
@@ -289,7 +293,8 @@ body {
 }
 
 .skills {
-	height: auto;
+	height: 100vh;
+	margin-bottom: 7rem;
 }
 
 .icon-container {
@@ -306,11 +311,6 @@ body {
 	margin: 1rem;
 }
 
-.down-icon {
-	padding-top: 5rem;
-	width: 1.5rem;
-	height: auto;
-}
 .slider-panel {
 	display: flex;
 	flex-direction: column;
@@ -336,7 +336,10 @@ body {
 		rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; */
 	padding-top: 4rem;
 	padding-bottom: 10rem;
-	height: auto;
+	height: 100vh;
+	width: 100vw;
+	background-color: #6B5255;
+	color: white;
 }
 .about-text {
 	text-align: justify;
@@ -357,6 +360,7 @@ body {
 	max-width: 30vw;
 	object-fit: cover;
 	border-radius: 50%;
+	border: solid 2px white;
 }
 
 .contact-icon {
@@ -564,6 +568,8 @@ section {
 	td {
 		text-align: center;
 		font-size: 1.3rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 	}
 
 	.contact-table tr {
