@@ -184,9 +184,9 @@ body {
 }
 
 .footer-nav {
-	margin-top: 1rem;
-	padding-bottom: rem;
-	padding-top: 1rem;
+	/* margin-top: 1rem; */
+	padding-bottom: 3rem;
+	/* padding-top: 1rem;  */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -293,7 +293,7 @@ body {
 }
 
 .skills {
-	height: 100vh;
+	height: 100%;
 	margin-bottom: 7rem;
 }
 
