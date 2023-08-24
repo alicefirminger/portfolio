@@ -240,7 +240,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	width: 100vw;
-	height: 100%;
+	height: 100vh;
 	background-color: #6B5255;
 	color: white;
 }
@@ -293,7 +293,7 @@ body {
 }
 
 .skills {
-	height: 100%;
+	height: 100vh;
 	margin-bottom: 7rem;
 }
 
@@ -336,7 +336,7 @@ body {
 		rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; */
 	padding-top: 4rem;
 	padding-bottom: 10rem;
-	height: 100%;
+	height: 100vh;
 	width: 100vw;
 	background-color: #6B5255;
 	color: white;
@@ -535,6 +535,7 @@ section {
 		padding: 0 1rem 2rem 1rem;
 		margin-top: 0;
 		width: 100vw;
+		height: 100%;
 	}
 
 	.titles {
