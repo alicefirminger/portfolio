@@ -241,7 +241,7 @@ body {
 	justify-content: center;
 	width: 100vw;
 	height: 100vh;
-	background-color: #6B5255;
+	background-color: #6b5255;
 	color: white;
 }
 
@@ -338,7 +338,7 @@ body {
 	padding-bottom: 10rem;
 	height: 100vh;
 	width: 100vw;
-	background-color: #6B5255;
+	background-color: #6b5255;
 	color: white;
 }
 .about-text {
@@ -489,11 +489,6 @@ section {
 	.slider > div {
 		height: 75vh;
 	}
-	.down-icon {
-		/* padding-top: 1.5rem; */
-		width: 1rem;
-		height: auto;
-	}
 
 	/* Bottom right text */
 	.text-block {
@@ -546,7 +541,7 @@ section {
 	}
 	.icons,
 	.contact-icon {
-		width: 20vw !important; /* Increase the width with !important */
+		width: 17.5vw !important; /* Increase the width with !important */
 		height: auto;
 		margin: 1rem;
 	}
