@@ -270,7 +270,7 @@ body {
 	padding-top: 1rem;
 } */
 
-#image {
+.image {
 	width: auto;
 	height: 60vh;
 	padding: 0 1rem 1rem 1rem;
@@ -403,11 +403,11 @@ body {
 	box-shadow: none;
 }
 
-#site-link {
+.site-link {
 	text-decoration: none;
 	color: var(--accent-color);
 }
-#site-link:hover {
+.site-link:hover {
 	text-decoration: none;
 	color: var(--accent-color);
 }
