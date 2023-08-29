@@ -1,9 +1,12 @@
 /* Global Styles */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@300&display=swap");
+
 :root {
 	--primary-color: #383d3e;
-	--background-color: #f6f3f0;
+	--background-color: #efeee6;
 	--text-color: #333333;
-	--accent-color: #fff;
+	--accent-color: #6b5255;
 	--button-accent-color: #949494;
 	--button-hover-color: #008000;
 }
@@ -25,7 +28,7 @@ body {
 }
 
 body {
-	font-family: "Manrope", sans-serif;
+	font-family: "Quicksand", sans-serif;
 	color: var(--text-color);
 	background-color: var(--background-color);
 }
@@ -41,12 +44,11 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 4rem;
+	padding: 1.5rem;
 	margin-left: 1rem;
 	margin-right: 1rem;
 	margin-bottom: 2rem;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	background-color: var(--accent-color);
+	background-color: var(--);
 	flex-wrap: wrap;
 }
 
@@ -62,7 +64,6 @@ body {
 
 .content {
 	font-weight: 100;
-	font-family: "Manrope", sans-serif;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -100,21 +101,19 @@ body {
 }
 
 .titles {
-	font-size: 4rem;
-	font-family: monospace;
+	font-size: 5rem;
 	letter-spacing: 0.2rem;
-	margin-bottom: 3rem;
-	padding-top: 2rem;
-	font-weight: 100;
-	font-variant: small-caps;
+	/* margin-bottom: 2rem; */
+	padding: 3rem;
+	font-weight: 900;
 	text-align: center;
+	font-family: "Archivo Black", sans-serif;
 }
 .headings {
-	font-family: monospace;
 	font-size: 2rem;
 	margin-bottom: 1.5rem;
 	padding: 1rem 0;
-	font-weight: 100;
+	font-weight: 900;
 }
 
 .text-content {
@@ -183,38 +182,7 @@ li::before {
 	font: 32px Arial, sans-serif;
 }
 
-.button {
-	background-color: var(--primary-color);
-	border: 0;
-	border-radius: 0.5rem;
-	color: var(--accent-color);
-	font-size: 0.9rem;
-	font-weight: 100;
-	line-height: 1rem;
-	padding: 0.75rem 1rem;
-	min-width: 9vw;
-	margin: 0 0.5rem 0 0;
-	text-align: center;
-	text-decoration: none;
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-	cursor: pointer;
-	user-select: none;
-	-webkit-user-select: none;
-	touch-action: manipulation;
-}
 
-.button:hover {
-	background-color: var(--button-hover-color);
-}
-
-.button:focus {
-	outline: 2px solid transparent;
-	outline-offset: 2px;
-}
-
-.button:focus-visible {
-	box-shadow: none;
-}
 
 .site-link {
 	text-decoration: none;
@@ -274,6 +242,7 @@ li::before {
 	flex-direction: row;
 	align-items: center;
 }
+
 .heading-container {
 	display: flex;
 	flex-direction: column;
@@ -310,7 +279,6 @@ li::before {
 	flex-shrink: 0;
 	padding: 1rem 0 1rem 0;
 	background-color: var(--background-color);
-	font-family: "Manrope", sans-serif;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -319,7 +287,6 @@ li::before {
 }
 
 .footer-nav p {
-	font-family: "Manrope", sans-serif;
 	font-weight: 100;
 }
 
@@ -332,7 +299,8 @@ li::before {
 .icon-container {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 	max-width: 70vw;
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
@@ -418,7 +386,7 @@ li::before {
 /* for phone screens */
 @media screen and (max-width: 480px) {
 	.titles {
-		font-size: 9vw;
+		font-size: 10vw;
 		line-height: 1.8rem;
 	}
 	.headings {

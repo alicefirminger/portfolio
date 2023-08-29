@@ -7,7 +7,7 @@
 	--primary-color: #383d3e;
 	--background-color: #efeee6;
 	--text-color: #333333;
-	--accent-color: #fff;
+	--accent-color: #6b5255;
 	--button-accent-color: #949494;
 	--button-hover-color: #008000;
 }
@@ -49,10 +49,7 @@ body {
 	/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 	background-color: var(--background-color);
 }
-/* .body-container:hover {
-	height: 47rem;
-	cursor: pointer;
-} */
+
 
 .job-role {
 	font-size: 4.5vw;
@@ -64,12 +61,6 @@ body {
 	scroll-snap-align: center;
 }
 
-/* .body-container:hover .job-role {
-	display: block;
-} */
-/* .body-container:hover .down-icon {
-	display: none;
-}  */
 .greeting {
 	font-size: 10vw; /* Change to a relative unit like vw */
 	font-family: "Archivo Black", sans-serif;
@@ -211,9 +202,6 @@ body {
 	text-align: justify;
 	font-size: 1.3rem;
 	background-color: var(--background-color);
-	/* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-		rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
-	/* border-radius: 1rem; */
 }
 
 .titles {
@@ -252,23 +240,6 @@ body {
 	justify-content: space-between;
 }
 
-/* .slider { */
-/* line them up horizontally */
-/* display: flex; */
-
-/* allow for scrolling */
-/* overflow-x: auto; */
-
-/* make it smooth on iOS */
-/* -webkit-overflow-scrolling: touch;
-} */
-/* .slider > div { */
-/* make sure the width is honored */
-/* flex-shrink: 0.13;
-	width: 650px;
-	height: 600px;
-	padding-top: 1rem;
-} */
 
 .image {
 	width: auto;
@@ -373,7 +344,7 @@ body {
 	border: 0;
 	border-radius: 0.5rem;
 	box-sizing: border-box;
-	color: var(--accent-color);
+	color: white;
 	font-size: 0.9rem;
 	font-weight: 100;
 	font-family: "Manrope", sans-serif;
@@ -405,11 +376,11 @@ body {
 
 .site-link {
 	text-decoration: none;
-	color: var(--accent-color);
+	color: white;
 }
 .site-link:hover {
 	text-decoration: none;
-	color: var(--accent-color);
+	color: white;
 }
 
 .container {
