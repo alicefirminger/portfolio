@@ -50,7 +50,6 @@ body {
 	background-color: var(--background-color);
 }
 
-
 .job-role {
 	font-size: 4.5vw;
 	font-family: monospace;
@@ -61,8 +60,24 @@ body {
 	scroll-snap-align: center;
 }
 
+.design-container {
+	display: flex;
+	flex-direction: row;
+	width: 75%;
+	justify-content: right;
+	align-items: center;
+}
+
+.design {
+	font-size: 3.5vw;
+	margin-top: 1rem;
+	font-weight: lighter;
+	color: var(--text-color);
+	animation: fadeIn 6s;
+}
+
 .greeting {
-	font-size: 10vw; /* Change to a relative unit like vw */
+	font-size: 11.2vw; /* Change to a relative unit like vw */
 	font-family: "Archivo Black", sans-serif;
 	text-align: center;
 	color: var(--text-color);
@@ -239,7 +254,6 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-
 
 .image {
 	width: auto;
@@ -486,12 +500,21 @@ section {
 /* For small screens e.g. phone */
 @media screen and (max-width: 480px) {
 	.greeting {
-		font-size: 12vw; /* Adjust the font size for small screens */
+		font-size: 13vw; /* Adjust the font size for small screens */
 		padding-top: 1rem;
 	}
 
 	.job-role {
+		margin-top: 0.5rem;
 		font-size: 5vw; /* Adjust the font size for small screens */
+	}
+
+	.design {
+		font-size: 4.5vw;
+	}
+
+	.design-container {
+		width: 83%;
 	}
 	.about-me,
 	.skills,
@@ -520,10 +543,7 @@ section {
 		height: 100vh;
 		margin-bottom: 0;
 	}
-	/* .body-container:hover {
-		height: 25rem;
-		cursor: pointer;
-	} */
+
 	.portfolio-image {
 		display: hidden;
 	}
@@ -564,12 +584,6 @@ section {
 		scroll-snap-align: center;
 		padding-left: 4rem;
 		padding-right: 4rem;
-	}
-
-	.down-icon {
-		padding-top: 2rem;
-		width: 0.7rem;
-		height: auto;
 	}
 
 	/* Bottom right text */
