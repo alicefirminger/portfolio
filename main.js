@@ -80,12 +80,21 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function scrollToTop() {
-	let up = document.getElementById("up-button");
+	let up = document.getElementById("up-button-container");
+	let content = document.getElementById("content");
 	up.addEventListener("click", function () {
 		window.scrollTo({
 			top: 0,
 			behavior: "smooth",
 		});
+	});
+
+	window.addEventListener("scroll", function () {
+		if (window.scrollY > content.offsetTop) {
+			up.style.display = "block";
+		} else {
+			up.style.display = "none";
+		}
 	});
 }
 document.addEventListener("DOMContentLoaded", scrollToTop());
