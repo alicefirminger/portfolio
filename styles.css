@@ -422,6 +422,7 @@ body {
 	height: 60px;
 	border-radius: 100%;
 	background-color: var(--primary-color);
+	border: solid 1px var(--background-color);
 	z-index: 2;
 }
 
