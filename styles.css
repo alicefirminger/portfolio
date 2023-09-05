@@ -126,7 +126,7 @@ body {
 		opacity: 1;
 	}
 }
-
+/* Header */
 .links {
 	display: flex;
 	flex-direction: row;
@@ -151,6 +151,7 @@ body {
 	transition: all 0.2s ease-in-out;
 }
 
+/* Content */
 .contact-table tr {
 	display: flex;
 	flex-direction: row;
@@ -413,29 +414,29 @@ body {
 	font-size: 0.9vw;
 }
 
-/* vertical snap points*/
-/* 
-html {
-	scroll-snap-type: y mandatory;
-}
-section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	width: 100vw;
-	scroll-snap-align: start;
+.up-button-container {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	background-color: var(--primary-color);
+	z-index: 2;
 }
 
-.banner {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	height: 100vh;
-	width: 100vw;
-	scroll-snap-align: center !important;
-} */
+.up-button {
+	width: 25px;
+	height: 25px;
+	border: 5px solid var(--background-color);
+	border-left: 0;
+	border-top: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: rotate(20deg);
+	transform: translate(-50%, -35%) rotate(225deg);
+}
 
 /* Responsiveness */
 /* For medium-sized screens e.g. tablet */
@@ -619,5 +620,13 @@ section {
 	}
 	.button-container {
 		width: 100vw;
+	}
+	.up-button-container {
+		width: 50px;
+		height: 50px;
+	}
+	.up-button {
+		width: 20px;
+		height: 20px;
 	}
 }

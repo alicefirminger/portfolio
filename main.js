@@ -52,8 +52,6 @@ window.addEventListener("load", hideImageContainer);
 window.addEventListener("resize", hideImageContainer);
 // Call the hideImageContainer function when the window is resized
 
-
-
 function typeWriter() {
 	for (let i = 0; i < elements.length; i++) {
 		const element = elements[i];
@@ -81,4 +79,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	typeWriter();
 });
 
-
+function scrollToTop() {
+	let up = document.getElementById("up-button");
+	up.addEventListener("click", function () {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	});
+}
+document.addEventListener("DOMContentLoaded", scrollToTop());
