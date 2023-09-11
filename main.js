@@ -82,12 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
 function scrollToTop() {
 	let up = document.getElementById("up-button-container");
 	let content = document.getElementById("content");
-	up.addEventListener("click", function () {
-		window.scrollTo({
-			top: 0,
-			behavior: "smooth",
-		});
-	});
+
+	up.style.display = "none";
 
 	window.addEventListener("scroll", function () {
 		if (window.scrollY > content.offsetTop) {
@@ -96,5 +92,12 @@ function scrollToTop() {
 			up.style.display = "none";
 		}
 	});
+
+	up.addEventListener("click", function () {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	});
 }
-document.addEventListener("DOMContentLoaded", scrollToTop());
+window.addEventListener("DOMContentLoaded", scrollToTop());
